@@ -26,10 +26,16 @@ function creaNumeri() {
     //  ciclo che crea un numero casuale finchè la lunghezza dell'array non è 5
     while (listaN.length < 5) {
         let x = Math.floor(Math.random() * 100) + 1;
-        listaN.push(x);
-        
-        
-        
+        listaN.push(x);    
     }
 
+}
+
+
+
+setTimeout(timer,3000);
+
+function timer() {
+    console.log("timer attivo")
+    
 }
