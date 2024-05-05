@@ -22,20 +22,21 @@
 
 // array lista numeri
 
-function creaNumeri() {    
+function creaNumeri() {
     //  ciclo che crea un numero casuale finchè la lunghezza dell'array non è 5
     while (listaN.length < 5) {
         let x = Math.floor(Math.random() * 100) + 1;
-        listaN.push(x);    
+        listaN.push(x);
     }
 
 }
 
 
-
-setTimeout(timer,3000);
-
+// funzione timer
 function timer() {
-    console.log("timer attivo")
-    
+    // elimino la lista dopo 3 sec
+    y = document.getElementById("lista").innerHTML = "";
+
+    console.log(listaN)
 }
+
