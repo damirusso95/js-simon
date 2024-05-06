@@ -36,7 +36,24 @@ function creaNumeri() {
 function timer() {
     // elimino la lista dopo 3 sec
     y = document.getElementById("lista").innerHTML = "";
-
     console.log(listaN)
+
+}
+
+
+function timerUtente() {
+    // elimino la lista dopo 4 sec
+    y = document.getElementById("lista").innerHTML = "";
+    console.log(ListaU)
+    creaNumeriUtente();
+
+}
+
+function creaNumeriUtente(){
+    while (ListaU.length < 5) {
+        let numeriUtente = prompt("scrivi un numeri visualizzato in precedenza");
+        ListaU.push(numeriUtente);
+        
+    }
 }
 
